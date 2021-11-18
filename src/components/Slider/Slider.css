@@ -1,13 +1,14 @@
 .slide{
     display: flex;
-    flex:100vw;
     width: 100vw;
-    height: 100%;
+    height: 80%;
     gap: 2em;
-    justify-content: center;
     align-items: center;
-   
+   flex: 0 0 100vw;
     background-color: rgb(250, 241, 241);
+    transition: all 1.5s ease;
+    
+   
 }
 
 .Wrapper{
@@ -15,6 +16,7 @@
 width: 100%;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 
 
@@ -29,9 +31,12 @@ width: 100%;
 }
 .slide-image{
     flex: 1;
+    height: 100%;
 }
 .slide-image img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     
 }
 .btn{
@@ -51,7 +56,7 @@ width: 100%;
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    border: 2px solid #444;
+   z-index: 5;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Slider.css"
 import ArrowLeftOutlinedIcon from '@mui/icons-material/ArrowLeftOutlined';
 import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined';
 import { Alert } from "@mui/material";
 import {slides} from"../../data";
+import { Translate } from "@mui/icons-material";
 
 
 
@@ -12,14 +13,30 @@ import {slides} from"../../data";
 
 
 const Slider = () => {
-    const handleClick=()=>{
-        alert("hello sam");
+    const[slideIndex,setslideIndex]=useState(0);
+    const handleClick=(direction)=>{
+    
+     if(direction==="left"){
+setslideIndex(slideIndex>0?slideIndex-1:2)
+
+
+     }
+
+else{
+    setslideIndex(slideIndex<2?slideIndex+1:0)
+
+
+}
+    
+
+      
+    
         
     }
     return (
       <div className="Wrapper">
 
-<div className="left-arrow" onClick={handleClick}>
+<div className="left-arrow"  onClick={()=>handleClick("left")}>
 <ArrowLeftOutlinedIcon />
 </div>
 
@@ -28,17 +45,17 @@ const Slider = () => {
 {
 
 slides.map(slide=>{
-
-    <div className="slide">
+return(
+    <div className="slide" style={{backgroundColor:slide.bg,transform:`translateX(${slideIndex*-100}vw)`}}>
 
     <div className="slide-image">
-        <img src=""/>
+        <img src={slide.img}/>
     
     </div>
     
     <div className="slide-content">
-        <h2>HOLIDAY OFFERS</h2>
-        <p>Grab our December holiday offers</p>
+        <h2>{slide.title}</h2>
+        <p>{slide.desc}</p>
     
     <div>
         <button className="btn">Buy now</button>
@@ -51,7 +68,7 @@ slides.map(slide=>{
     
        </div>
 
-
+)
 
 })
 
@@ -64,7 +81,7 @@ slides.map(slide=>{
 
 
 
-   <div className="right-arrow"  onClick={handleClick}>
+   <div className="right-arrow"  onClick={()=>handleClick("right")}>
 <ArrowRightOutlinedIcon />
 
 </div>
