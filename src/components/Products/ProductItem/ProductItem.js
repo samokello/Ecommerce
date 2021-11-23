@@ -8,15 +8,6 @@ const ProductsItem=({item})=>{
     <div className="products">
 
 <div className="product-images">
-    <img src={item.img}/>
-
-<div className="empty-container">
-
-</div>
-    
-
-</div>
-
 <div className="fav-icons">
 
 <div className="icons">
@@ -34,6 +25,16 @@ const ProductsItem=({item})=>{
 
 
 </div>
+
+    <img src={item.img}/>
+
+<div className="empty-container">
+
+</div>
+    
+
+</div>
+
 
 
 
