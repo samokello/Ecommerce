@@ -1,0 +1,153 @@
+.my-footer-logo{
+    
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-left: 1em;
+}
+
+.my-footer-logo p{
+    width: 50%;
+    margin-left: 2rem;
+    margin-bottom: 1em;
+    font-size:1rem;
+
+}
+
+
+.my-footer-logo h1{
+    font-size: 3rem;
+    width: 30%;
+    margin: 2rem;
+}
+
+.footer-Container{
+    background-color:  #D1CCCC;
+    display: flex;
+    height:45vh;
+    width:100%;
+    justify-content: center;
+   
+
+
+    
+    
+}
+
+.footer-icons{
+    display: flex;
+    margin-left: 2em;
+    
+}
+.footer-icons div{
+    margin-right: 2em;
+    font: 2rem;
+}
+
+
+.footer-li{
+    display: flex;
+    margin: 2em;
+}
+
+.li-2{
+    margin:0em 4em ;
+}
+
+.li-2 ul li{
+    margin-top: 1.5em;
+list-style-type: none;
+font-size:1.3rem;
+}
+
+.flex-li{
+    margin-top: 1em;
+    text-decoration: none;
+}
+
+
+ .footer-terms div{
+    display: flex;
+     align-items: center; 
+     text-align: center;
+     line-height: 4em;
+    
+    
+    
+    
+} 
+
+.footer-terms p{
+    margin-left:.5em;
+}
+
+
+
+
+.footer-terms p{
+font-size: 1.5rem;
+}
+
+.facebook{
+    background-color: #3B5998;
+}
+
+.facebook a{
+    color: #fff;
+}
+
+.twiter{
+    background-color: #4DA2F1;
+}
+
+.instagram{
+    background-color: red;
+}
+
+.pinterest{
+    background-color: red;
+}
+
+
+.copyright-container{
+    text-align: center;
+    color: #fff;
+    background-color:#494545;
+    padding:.2em;
+    font-size: 1.2em;
+}
+
+.footer-icons div{
+   
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    padding: 0.5em;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+
+.footer-Container h2{
+    font-size:2.1rem;
+}
+
+.payments div{
+    width: 50px;
+    height: 50px;
+    margin-right: 2em;
+
+
+}
+
+.payments div img{
+    width: 100%;
+}
+
+.m-pesa-svg{
+    
+    height: 20px;
+
+}

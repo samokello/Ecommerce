@@ -1,0 +1,43 @@
+.product-size{
+    display: flex;
+   
+    
+    margin-left:2em;
+    
+
+}
+
+.product-h2{
+    font-size: 2.5rem;
+}
+
+
+.product-color{
+    display: flex;
+    
+}
+
+.product-price{
+    display: flex;
+    
+
+}
+.dresses p{
+    font-size:2rem ;
+}
+
+
+.dresses{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.selected-items{
+    background-color: #388A8A;
+    font-size: 1.5rem;
+}
+
+
