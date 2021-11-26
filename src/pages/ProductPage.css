@@ -1,0 +1,160 @@
+.product-image-container{
+   background-color: #44388a;
+    display: flex;
+   align-items: center;
+  justify-content: center;
+    gap: 2em;
+}
+
+.image-container{
+    width: 500px;
+   height: 500px;
+   
+} 
+
+.image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.choose-color:hover{
+    transition: all ease;
+    transform: scale(-1);
+}
+
+.choose-color{
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+.number-product{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.colors-select{
+    display: flex;
+   
+    align-items: center;
+margin: 2em 0em;
+
+}
+
+.increment-product{
+    display: flex;
+
+align-items: center;
+
+    
+}
+
+
+.fav-product{
+    display: flex;
+ 
+  margin-left:1em;
+  
+
+}
+
+.colors-container p{
+    margin:2em 0em;
+
+}
+.color1{
+    background-color:#BA6364;
+}
+
+.color2{
+    background-color: #BA8D63;
+}
+
+.different{
+    background-color:#6AB8BD;
+}
+
+.select-option{
+  
+    padding: 1em 2em;
+}
+
+
+.fav-product div{
+    display: flex;
+    
+}
+
+.add-btn{
+    margin-left: 1em;
+}
+
+.add-button{
+    padding: .7em;
+    cursor: pointer;
+}
+
+.minus-icon , .add-icon{
+    border: 2px darkgrey solid;
+   font-size: 2rem;
+    background-color: #fff;
+    margin: 1em;
+    cursor: pointer;
+}
+
+.color-flex{
+    display: flex;
+    background-color: red;
+    align-items: center;
+    height: 35px;
+}
+
+
+
+ .p-container{
+   
+    width: 50%;
+    height: 450px;
+    
+
+}
+
+.image-container-content *{
+  
+    margin: 1em 0em;
+
+}
+
+
+.select-size{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.select-size div{
+    margin: 1em 0em;
+}
+
+.image-container-content h1 {
+    font-size: 3rem;
+}
+
+
+.empty-color{
+   
+    margin: 1em;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    padding: 1em;
+    
+}

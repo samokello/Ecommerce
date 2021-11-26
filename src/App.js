@@ -1,11 +1,10 @@
 import React from 'react';
 import Home from './pages/Home';
 import './App.css';
-import Productpage from "./pages/Productpage"
-
+import ProductPage from './pages/ProductPage';
 function App() {
   return (
-  <Productpage/>
+  <ProductPage />
   );
 }
 
