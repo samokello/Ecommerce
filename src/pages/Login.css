@@ -1,0 +1,172 @@
+.login-container{
+    background-color: #fff;
+    width: 100%;
+   /* height: 80vh; */
+    display: flex;
+   
+}
+
+.login-background{
+    background:linear-gradient(rgba(59, 119, 121, 0.8),rgba(50,112,114,0.8)) ,url("../Images/slide1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   width: 50%;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+}
+
+.login-background *{
+    margin-top: 1em;
+    font-size: 2rem;
+}
+
+.passward-holder{
+    position: relative;
+}
+
+
+.eye-icon{
+    position: absolute;
+    top:30%;
+    left:95%;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.login-content{
+    width:50%;
+    /* margin: 0em 2em; */
+}
+
+.heading{
+    
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+}
+
+.text-cont{
+    text-align: center;
+}
+
+.text-pad{
+    margin-left: 1em;
+}
+
+.heading h1{
+    font-size: 3rem;
+    color: #fff;
+    width: 100%;
+}
+
+
+.create-account{
+    display: flex;
+ justify-content: center;
+ align-items: center;
+    gap: 2em;
+}
+
+.account{
+border: 2px solid #317C7C;
+padding: 2em 4em;
+cursor: pointer;
+
+}
+
+
+.checkbox-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 3em 0em;
+}
+
+.passward{
+    width: 100%;
+    padding: 2em;
+    outline: none;
+}
+
+.check{
+    display: flex;
+}
+
+
+form{
+    margin: 0em 3em;
+}
+
+
+.enterprise-title{
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.copyright{
+    text-align: center;
+    margin-top:15%;
+    font-size: 1.5rem;
+}
+
+.login-btn{
+    width: 100%;
+    padding: .8em;
+    background-color: #317C7C;
+  border: none;
+  color: #fff;
+    margin-top: 3em;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.link p a{
+    text-decoration: none;
+    color: rgba(50,112,114,0.8);
+}
+
+
+.btn-red{
+    border: none;
+    border-bottom: 2px solid darkgrey;
+ margin-top: 2em;
+
+
+}
+
+.btn-red:focus {
+    border-bottom: 3px solid #317C7C;
+}
+
+.empty-div{
+    background-color: #317C7C;
+    width: 100%;
+    height: 8vh;
+
+}
+
+
+.form{
+    position: relative;
+}
+
+.form__label:focus~.label{
+    visibility: visible;
+    top: 0;
+    left: 0;
+    color:#317C7C;
+}
+
+.label {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    transition: all .5s ease;
+    color: darkgrey;
+    
+
+}
+
+
