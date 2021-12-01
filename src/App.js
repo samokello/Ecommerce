@@ -3,10 +3,11 @@ import Home from './pages/Home';
 import './App.css';
 import ProductPage from './pages/ProductPage';
 import Login from './pages/Login';
+import SignUp from './pages/SignUp';
 
 function App() {
   return (
-  <Login/>
+  <SignUp/>
   );
 }
 
