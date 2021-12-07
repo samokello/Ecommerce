@@ -5,6 +5,7 @@ import Footer from '../components/Footer/Footer';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import "./Login.css";
+import { Link } from "react-router-dom";
 
 const Login=()=>{
 
@@ -78,7 +79,7 @@ setShowPass(!showPass)
     </div>
 
 <div>
-   <button className="account">create Account</button>
+<Link to="/SignUp"> <button className="account">create Account</button></Link>
 </div>
 
 

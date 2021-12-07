@@ -1,6 +1,15 @@
-.category-contaner{
+    .category-contaner{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center ;
 }
+
+.category-content{
+    flex: 1;
+}
+
+
 
 .product{
     flex: 1;
@@ -44,4 +53,15 @@ align-items: center;
     background-color: #fff;
     text-transform: uppercase;
     
+}
+
+
+/* @media query */
+@media(max-width:810px){
+    .category-contaner{
+            flex-direction: column;
+    }
+    
+
+
 }

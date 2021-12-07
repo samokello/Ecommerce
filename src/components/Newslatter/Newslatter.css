@@ -50,3 +50,18 @@
 
 
 }
+
+/* @media query */
+@media (max-width:768px){
+    .myButton{
+        width:90%;
+    }
+
+    .mybtn{
+        width: 100%;
+    }
+.paragraph{
+    width: 75%;
+}
+
+}

@@ -7,6 +7,7 @@ import ClearIcon from '@mui/icons-material/Clear';
 import Announcement from "../components/Announcements/Announcement";
 import Nav from "../components/Navigation/Nav";
 import Footer from "../components/Footer/Footer";
+import { Link } from "react-router-dom";
 const SignUp = () => {
     const [passward,setPassword]=useState("");
     const [ConfirmPassWord,setConfirmPassWord]=useState("");
@@ -19,6 +20,10 @@ function onChangePassWord(e){
 function onConfirmPassWord(e){
     const ConfirmPassWordValue=e.target.value;
     setConfirmPassWord(ConfirmPassWordValue);
+}
+
+const RenderIcon=()=>{
+  
 }
 
   return (
@@ -75,14 +80,14 @@ function onConfirmPassWord(e){
             <input onChange={(e)=>onConfirmPassWord(e)} type="password" />
           </div>
 
-
+<div className="correct-icon">
           {
 passward===ConfirmPassWord?<CheckIcon style={{fontSize:"2rem"}}/>:<ClearIcon style={{fontSize:"2rem"}}/>
 
 
     
 } 
-
+</div>
 
 </div>
 
@@ -93,7 +98,7 @@ passward===ConfirmPassWord?<CheckIcon style={{fontSize:"2rem"}}/>:<ClearIcon sty
 
         <div className="have-account">
           <p>
-            Already have an account? <a href="#">LOG IN HERE</a>
+            Already have an account? <Link to="/Login">LOG IN HERE</Link>
           </p>
         </div>
       </form>

@@ -3,6 +3,7 @@ import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import "./Nav.css";
 import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined';
 import Badge from '@mui/material/Badge';
+import {Link} from "react-router-dom";
 
 
 const Nav=()=>{
@@ -25,27 +26,27 @@ EN
 
 
     <div className="center">
-    <h1 className="enterprise">Magoso Enterprise.</h1>
+    <h1 className="enterprise"> <Link to="/" >Magoso Enterprise.</Link></h1>
     </div>
 
 
     <div className="right ">
        <ul className="right">
            <div>
-<li><a href="#">Login</a>
+<li><Link to="/Login">Login</Link>
 </li>
 </div>
 
 <div>
-<li><a href="#">Register</a>
+<li><Link to="/SignUp">Register</Link>
 </li>
 </div>
 
 <div>
 
-<Badge badgeContent={4} color="secondary">
+<Link to="/cart"><Badge badgeContent={4} color="secondary">
         <LocalMallOutlinedIcon color="action" />
-      </Badge>
+      </Badge></Link>
 </div>
 
        </ul>
